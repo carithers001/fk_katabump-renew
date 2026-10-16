@@ -29,7 +29,7 @@ def send_tg_message(status_icon, status_text, time_left=""):
     if '@' in EMAIL:
         name, domain = EMAIL.split('@', 1)
         if len(name) > 4:
-            masked_email = f"{name[:2]}****{name[-2:]}@{domain}"
+            masked_email = f"{name[:2]}****{name[-4:]}@{domain}"
         else:
             masked_email = f"{name}@{domain}"
     else:
